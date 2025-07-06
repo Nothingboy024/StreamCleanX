@@ -1,5 +1,5 @@
-#TG : @Sunrises_24
-#ALL FILES UPLOADED - CREDITS 🌟 - @Sunrises_24
+#TG : @ptvnothingboy
+#ALL FILES UPLOADED - CREDITS 🌟 - @ptvnothingboy
 import subprocess
 import os, json
 import time
@@ -69,9 +69,9 @@ I'ᴍ ᴀ ᴀᴅᴠᴀɴᴄᴇᴅ ꜱᴛʀᴇᴀᴍɪɴɢ & ᴍɪʀʀᴏʀ ʙᴏ
 """
 
 START_BUTTONS = InlineKeyboardMarkup([
-    [InlineKeyboardButton("Owner 🧑🏻‍💻", url="https://t.me/Sunrises_24")],
-    [InlineKeyboardButton("Updates 📢", url="https://t.me/Sunrises24botUpdates"),
-     InlineKeyboardButton("Support ❤️‍🔥", url="https://t.me/Sunrises24botSupport")]
+    [InlineKeyboardButton("Owner 🧑🏻‍💻", url="https://t.me/ptvnothingboy")],
+    [InlineKeyboardButton("Updates 📢", url="https://t.me/ptvnothingboy"),
+     InlineKeyboardButton("Support ❤️‍🔥", url="https://t.me/ptvnothingboy")]
 ])
 
 @Client.on_message(filters.command("start"))
@@ -101,7 +101,7 @@ async def start(client: Client, message: Message):
     except Exception as e:
         print("Logging error:", e)
         
-#ALL FILES UPLOADED - CREDITS 🌟 - @Sunrises_24
+#ALL FILES UPLOADED - CREDITS 🌟 - @ptvnothingboy
 
 @Client.on_callback_query(filters.regex("^set_sample_video_duration_"))
 async def set_sample_video_duration(client, callback_query: CallbackQuery):
@@ -146,12 +146,12 @@ async def display_user_settings(client, msg, edit=False):
     current_screenshots = await db.get_screenshots_count(user_id)
 
     keyboard = InlineKeyboardMarkup([
-        [InlineKeyboardButton("💠", callback_data="sunrises24_bot_updates")],
+        [InlineKeyboardButton("💠", callback_data="Nothing Boy")],
         [InlineKeyboardButton("Sample Video Settings 🎞️", callback_data="sample_video_option")],
         [InlineKeyboardButton("Screenshots Settings 📸", callback_data="screenshots_option")],
         [InlineKeyboardButton("Thumbnail Settings 📄", callback_data="thumbnail_settings")],
         [InlineKeyboardButton("View Google Drive Folder ID 📂", callback_data="preview_gdrive")],
-        [InlineKeyboardButton("💠", callback_data="sunrises24_bot_updates")],
+        [InlineKeyboardButton("💠", callback_data="Nothing Boy")],
         [InlineKeyboardButton("Close ❌", callback_data="del")]
     ])
     
@@ -730,7 +730,7 @@ async def clear_database_handler(client: Client, msg: Message):
     except Exception as e:
         await msg.reply_text(f"An error occurred: {e}")
 
-#ALL FILES UPLOADED - CREDITS 🌟 - @Sunrises_24
+#ALL FILES UPLOADED - CREDITS 🌟 - @ptvnothingboy
 #Ping
 @Client.on_message(filters.command("ping"))
 async def ping(bot, msg):
@@ -749,7 +749,7 @@ async def safe_edit_message(message, new_text):
         print(f"Failed to edit message: {e}")
 
 
-#ALL FILES UPLOADED - CREDITS 🌟 - @Sunrises_24
+#ALL FILES UPLOADED - CREDITS 🌟 - @ptvnothingboy
 @Client.on_callback_query(filters.regex("del"))
 async def closed(bot, msg):
     try:
@@ -758,9 +758,9 @@ async def closed(bot, msg):
         return
 
     # Callback query handler for the "sunrises24_bot_updates" button
-@Client.on_callback_query(filters.regex("^sunrises24_bot_updates$"))
+@Client.on_callback_query(filters.regex("^ptvnothingboy"))
 async def sunrises24_bot_updates_callback(_, callback_query):
-    await callback_query.answer("MADE BY @SUNRISES24BOTUPDATES ❤️", show_alert=True)    
+    await callback_query.answer("MADE BY @ptvnothingboy ❤️", show_alert=True)    
     
 @Client.on_message(filters.command("screenshots") & filters.private)
 async def screenshots_command(client, message: Message):
@@ -1095,15 +1095,15 @@ async def broadcast(bot, msg: Message):
     await msg.reply_text(f"Broadcast completed: {sent_count} sent, {failed_count} failed.")
     await msg.reply_document('broadcast_log.txt')
 
-#ALL FILES UPLOADED - CREDITS 🌟 - @Sunrises_24
+#ALL FILES UPLOADED - CREDITS 🌟 - @ptvnothingboy
 #FUNCTION ABOUT HANDLER
 @Client.on_message(filters.command("about"))
 async def about_command(bot, msg):
     about_text = """
-<b>✯ Mʏ Nᴀᴍᴇ : <a href=https://t.me/StreamCleanXBot>ꜱᴛʀᴇᴀᴍᴄʟᴇᴀɴx 🌟</a></b>
-<b>✯ Dᴇᴠᴇʟᴏᴘᴇʀ 🧑🏻‍💻 : <a href=https://t.me/Sunrises_24>𝐒𝐔𝐍𝐑𝐈𝐒𝐄𝐒™ ⚡</a></b>
-<b>✯ Uᴘᴅᴀᴛᴇs 📢 : <a href=https://t.me/Sunrises24BotUpdates>𝐔𝐏𝐃𝐀𝐓𝐄𝐒 📢</a></b>
-<b>✯ Sᴜᴘᴘᴏʀᴛ ✨ : <a href=https://t.me/Sunrises24BotUpdates>𝐒𝐔𝐏𝐏𝐎𝐑𝐓 ✨</a></b>
+<b>✯ Mʏ Nᴀᴍᴇ : <a href=https://t.me/ptvnothingboy 🌟</a></b>
+<b>✯ Dᴇᴠᴇʟᴏᴘᴇʀ 🧑🏻‍💻 : <a href=https://t.me/ptvnothingboy>Nothing BOY⚡</a></b>
+<b>✯ Uᴘᴅᴀᴛᴇs 📢 : <a href=https://t.me/ptvnothingboy>𝐔𝐏𝐃𝐀𝐓𝐄𝐒 📢</a></b>
+<b>✯ Sᴜᴘᴘᴏʀᴛ ✨ : <a href=https://t.me/ptvnothingboy>𝐒𝐔𝐏𝐏𝐎𝐑𝐓 ✨</a></b>
 <b>✯ Bᴜɪʟᴅ Sᴛᴀᴛᴜs 📊 : ᴠ2.5 [Sᴛᴀʙʟᴇ]</b>
     """
     await msg.reply_text(about_text)
@@ -1140,13 +1140,13 @@ Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.
 
  💭• Tʜɪs Bᴏᴛ Is Fᴏʟʟᴏᴡs ᴛʜᴇ 𝟸GB Bᴇʟᴏᴡ Fɪʟᴇs Tᴏ Tᴇʟᴇɢʀᴀᴍ.\n• 𝟸GB Aʙᴏᴠᴇ Fɪʟᴇs Tᴏ Gᴏᴏɢʟᴇ Dʀɪᴠᴇ.
  
-🔱 𝐌𝐚𝐢𝐧𝐭𝐚𝐢𝐧𝐞𝐝 𝐁𝐲 : <a href='https://t.me/Sunrises_24'>𝐒𝐔𝐍𝐑𝐈𝐒𝐄𝐒™</a></b>
+🔱 𝐌𝐚𝐢𝐧𝐭𝐚𝐢𝐧𝐞𝐝 𝐁𝐲 : <a href='https://t.me/ptvnothingboy'>NOTHING BOY</a></b>
     
    """
     await msg.reply_text(help_text)
     
 
-#ALL FILES UPLOADED - CREDITS 🌟 - @Sunrises_24
+#ALL FILES UPLOADED - CREDITS 🌟 - @ptvnothingboy
 #Ping
 @Client.on_message(filters.command("ping"))
 async def ping(bot, msg):
